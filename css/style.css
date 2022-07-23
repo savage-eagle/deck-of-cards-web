@@ -1,0 +1,15 @@
+#draw-card-action {
+    display: none;
+}
+
+#game-container {
+    display: none;
+}
+
+#resume-game-action {
+    display: none;
+}
+
+#game-container img {
+    width: 79px;
+}

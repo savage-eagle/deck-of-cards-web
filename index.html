@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deck of Cards</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container justify-content-center">
+            
+            <div class="row justify-content-center">
+                <div class="container">
+                    <div class="d-flex">
+                        <h2 class="title">House Cards Game</h2>
+                        <button class="btn btn-primary mx-4" id="start-game">Start Game</button>
+                        <button class="btn btn-primary mx-4" id="draw-card-action">Draw new card</button>
+                    </div>
+
+                    <button class="btn btn-primary mx-4" id="resume-game-action">Resume Game</button>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <h3 id="show-winner"></h3>
+
+                        <div class="container-fluid" id="game-container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="player-a">Player A: <span id="player-a-score">0</span></p>
+
+                                    <div id="player-cards-a" class="card-container"></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="player-b">Player B: <span id="player-b-score">0</span></p>
+
+                                    <div id="player-cards-b" class="card-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="./js/app.js"></script>
+</html>
